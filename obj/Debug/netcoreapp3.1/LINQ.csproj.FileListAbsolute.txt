@@ -110,3 +110,6 @@ C:\Users\harsh jangid\Desktop\LINQ\obj\Debug\netcoreapp3.1\LINQ.genruntimeconfig
 C:\Users\harsh jangid\Desktop\LINQ\obj\Debug\netcoreapp3.1\Razor\Views\Operation\Index.cshtml.g.cs
 C:\Users\harsh jangid\Desktop\LINQ\obj\Debug\netcoreapp3.1\Razor\Views\Operation\Details.cshtml.g.cs
 C:\Users\harsh jangid\Desktop\LINQ\obj\Debug\netcoreapp3.1\Razor\Views\Operation\Edit.cshtml.g.cs
+C:\Users\harsh jangid\Desktop\LINQ\obj\Debug\netcoreapp3.1\Razor\Views\Operation\Sorting.cshtml.g.cs
+C:\Users\harsh jangid\Desktop\LINQ\obj\Debug\netcoreapp3.1\Razor\Views\Operation\IdSorting.cshtml.g.cs
+C:\Users\harsh jangid\Desktop\LINQ\obj\Debug\netcoreapp3.1\Razor\Views\Operation\AgeSorting.cshtml.g.cs

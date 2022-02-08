@@ -1,18 +1,14 @@
 ﻿@model IEnumerable<LINQ.Models.Employee>
-@using System.Collections.Generic;
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "AgeSorting";
 }
 
-<h1>Index</h1>
-<td>
-    <a asp-action = "Sorting" asp-controller = "Operation" >Sorting</a> |
-    <a asp-action = "IdSorting" asp-controller = "Operation" >SortingByDepartment</a> |
-    <a asp-action = "AgeSorting" asp-controller = "Operation" >AgeSorting</a>
-</td>
+<h1>AgeSorting</h1>
 
-
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
 <table class="table">
     <thead>
         <tr>
@@ -47,17 +43,11 @@
                 @Html.DisplayFor(modelItem => item.Department)
             </td>
             <td>
-               
-                @Html.ActionLink("Edit", "Edit", new { id=item.EmployeeID }) |
-                @Html.ActionLink("Details", "Details", new {id=item.EmployeeID }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Edit", "Edit", new {  id=item.EmployeeID  }) |
+                @Html.ActionLink("Details", "Details", new {  id=item.EmployeeID  }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.EmployeeID })
             </td>
         </tr>
-        
 }
     </tbody>
 </table>
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-

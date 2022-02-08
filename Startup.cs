@@ -45,6 +45,8 @@ namespace LINQ
             app.UseRouting();
 
             app.UseAuthorization();
+            
+            
 
             app.UseEndpoints(endpoints =>
             {
@@ -52,6 +54,7 @@ namespace LINQ
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+            
         }
     }
 }

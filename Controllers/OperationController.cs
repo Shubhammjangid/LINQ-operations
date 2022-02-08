@@ -50,6 +50,24 @@ namespace LINQ.Controllers
             return View(getEmployeeDetail);
         }
 
+        public IActionResult Sorting()
+        {
+            var sortList = employee.GetEmployeeList().OrderBy(x => x.Name);
+            return View(sortList);
+        }
+
+        public IActionResult IdSorting()
+        {
+            var idSort = employee.GetEmployeeList().OrderBy(x => x.Department);
+            return View(idSort);
+        }
+
+        public IActionResult AgeSorting()
+        {
+            var ageSort = employee.GetEmployeeList().OrderBy(x => x.Age).ToList();
+            return View(ageSort);
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, Employee collection)
