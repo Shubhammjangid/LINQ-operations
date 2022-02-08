@@ -6,9 +6,21 @@
 
 <h1>Sorting</h1>
 
-<p>
+@*<li>*@
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        Storage
+        <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu" role="menu">
+        <li>@Html.ActionLink("Age", "AgeSorting", "Operation")</li>
+        <li>@Html.ActionLink("Department", "IdSorting", "Operation")</li>
+        <li>@Html.ActionLink("Name", "Sorting", "Operation")</li>
+    </ul>
+@*</li>*@
+
+@*<p>
     <a asp-action="Create">Create New</a>
-</p>
+</p>*@
 
 <table class="table">
     <thead>

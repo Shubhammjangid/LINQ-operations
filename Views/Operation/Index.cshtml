@@ -6,11 +6,17 @@
 }
 
 <h1>Index</h1>
-<td>
-    <a asp-action = "Sorting" asp-controller = "Operation" >Sorting</a> |
-    <a asp-action = "IdSorting" asp-controller = "Operation" >SortingByDepartment</a> |
-    <a asp-action = "AgeSorting" asp-controller = "Operation" >AgeSorting</a>
-</td>
+
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        Storage
+        <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu" role="menu">
+        <li>@Html.ActionLink("Age", "AgeSorting", "Operation")</li>
+        <li>@Html.ActionLink("Department", "IdSorting", "Operation")</li>
+        <li>@Html.ActionLink("Name", "Sorting", "Operation")</li>
+    </ul>
+
 
 
 <table class="table">

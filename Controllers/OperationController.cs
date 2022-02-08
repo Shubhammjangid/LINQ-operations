@@ -52,7 +52,7 @@ namespace LINQ.Controllers
 
         public IActionResult Sorting()
         {
-            var sortList = employee.GetEmployeeList().OrderBy(x => x.Name);
+            var sortList = employee.GetEmployeeList().OrderBy(x => x.Name).ToList();
             return View(sortList);
         }
 
